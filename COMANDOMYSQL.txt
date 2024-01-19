@@ -1,0 +1,221 @@
+
+ SELECT LTRIM('   OLA') AS RESULTADO;
+
+ SELECT RTRIM('   OLA    ') AS RESULTADO;
+
+ SELECT TRIM('   OLA') AS RESULTADO;
+ 
+ SELECT CONCAT('OLA','','TUDO BEM','?')AS RESULTADO
+ 
+ 
+ SELECT UPPER('   OLA') AS RESULTADO;
+
+ 
+ SELECT LOWER('   OLA') AS RESULTADO;
+
+ 
+ SELECT SUBSTRING('   OLA TUDO BEM',6,4) AS RESULTADO;
+
+ 
+
+ SELECT CONCAT(NOME,'(',CPF,')') AS RESULTADO FROM TABELA_CLIENTES;
+
+____________________________________________________________________________________________________________________________________________________________________________
+
+FUNÇÃO DATA
+SELECT CURDATE();== ANO ATUAL COM MES E DIA
+
+SELECT CURRENT_TIME();==HORA ATUAL
+
+SELECT CURRENT_TIMESTAMP();==DATA E HORA
+
+SELECT YEAR(CURRENT_TIMESTAMP());
+
+SELECT DAY(CURRENT_TIMESTAMP());
+
+SELECT MONTH(CURRENT_TIMESTAMP());
+
+SELECT MONTHNAME(CURRENT_TIMESTAMP());
+
+SELECT DATADIFF(CURRENT_TIMESTAMP(),'2023-01-01');== MOSTRA QUANTOS DIAS DAQUELE ATE OUTRO
+
+SELECT DATE_SUB(CURRENT_TIMESTAMP(),INTERVAL 5 DAY); == TIRA OS DIAS 
+
+
+_______________________________________________________________________________________________________________________________________________________________________________
+
+FUNÇÃO MATEMATICA 
+
+SELECT CEILING(12.33333333333) AS RESULTADO == ARREDONDA OS NUMERO PARA CIMA
+
+SELECT ROUNDE (12.333333) AS RESULTADO == ARREDONDA 
+
+SELECT FLOOR(12.333333) AS RESULTADO == ARREDONDA PARA BAIXO
+
+SELECT RAND() AS RESULTADO == NUMERO ALEATORIO
+_______________________________________________________________________________________________________________________________________________________________________________
+
+Conversão de dados
+//DATA EM STRING
+
+SELECT CURRENT_TIMESTAMP() AS RESULTADO;
+
+ SELECT CONCAT('OLA','','TUDO BEM','?',
+DATA_FORMAT(CURRENT_TIMESTAMP(),'%W%d%c%y - %u'))AS RESULTADO
+
+SELECT CONVERT(23,3,CHAR) AS RESULTADO;
+
+SELECT SUBSTRING(CONVERT(23,3,CHAR)1,1) AS RESULTADO;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
